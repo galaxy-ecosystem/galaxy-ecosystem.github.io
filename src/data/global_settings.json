@@ -1,8 +1,8 @@
 {
-  "title": "blackspike astro landing page",
-  "description": "A free Astro landing theme made with Tailwind",
+  "title": "galaxy ecosystem research group main page",
+  "description": "Astrophysics research group based in the University of Science and Technology of China, led by Prof. Enci Wang.",
   "social_image": "/1200x630.jpg",
-  "base_url": "https://astro-theme.blackspike.com",
+  "base_url": "https://galaxy-ecosystem.github.io",
   "demo": {
     "title": "Need design?",
     "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
@@ -11,20 +11,16 @@
   "theme_color": "#18181b",
   "nav": [
     {
-      "title": "Services",
-      "link": "/#services"
+      "title": "Science",
+      "link": "/#science"
     },
     {
-      "title": "Case studies",
-      "link": "/#case-studies"
+      "title": "Works",
+      "link": "/#works"
     },
     {
-      "title": "Pricing",
-      "link": "/#pricing"
-    },
-    {
-      "title": "FAQ",
-      "link": "/#faq"
+      "title": "People",
+      "link": "/#people"
     },
     {
       "title": "Newsletter",

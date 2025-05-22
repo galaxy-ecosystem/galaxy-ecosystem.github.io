@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro"
 import CaseStudiesSection from "../components/CaseStudiesSection.astro"
 import ClientsSection from "../components/ClientsSection.astro"
 import FaqSection from "../components/FaqSection.astro"
-import ServicesCarousel from "../components/ServicesCarousel.astro"
+import ScienceCarousel from "../components/ScienceCarousel.astro"
 import HeroSection from "../components/HeroSection.astro"
 import NewsletterSection from "../components/NewsletterSection.astro"
 import PricingSection from "../components/PricingSection.astro"
@@ -32,7 +32,7 @@ import testimonials from "../data/testimonials.json"
     title={ home.hero_title }
   />
 
-  <ServicesCarousel
+  <ScienceCarousel
     services={ services }
     title={ home.services_title }
   />
@@ -59,16 +59,5 @@ import testimonials from "../data/testimonials.json"
     title={ home.testimonials_title }
   />
 
-  <PricingSection
-    pricing={ pricing }
-    title={ home.pricing_title }
-  />
-
-  <FaqSection
-    faq={ faq }
-    title={ home.faq_title }
-  />
-
-  <NewsletterSection newsletter={newsletter} />
 
 </Layout>
