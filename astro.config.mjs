@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  site: "https://galaxy-ecosystem.github.io",
+  base: "/",
   vite: {
     plugins: [tailwindcss()]
   },
