@@ -1,55 +1,22 @@
-import { defineConfig } from 'astro/config'
-import tailwindcss from '@tailwindcss/vite'
+// @ts-check
+import { defineConfig } from 'astro/config';
 
+import tailwindcss from '@tailwindcss/vite';
+import react from '@astrojs/react';
+
+// https://astro.build/config
 export default defineConfig({
-  site: "https://galaxy-ecosystem.github.io",
-  vite: {
-    plugins: [tailwindcss()]
+  compressHTML: true,
+  build: {
+    inlineStylesheets: 'always',
+    assetsInlineLimit: 10240, // 10KB to inline achievements.css (7.5KB)
   },
-  experimental: {
-    fonts: [{
-      provider: "local",
-      name: "InterLocal",
-      cssVariable: "--font-inter",
-      variants: [
-        {
-          weight: 400,
-          style: "normal",
-          src: ["./src/assets/fonts/Inter-Regular.woff2"]
-        },
-        {
-          weight: 600,
-          style: "normal",
-          src: ["./src/assets/fonts/Inter-SemiBold.woff2"]
-        },
-        {
-          weight: 700,
-          style: "normal",
-          src: ["./src/assets/fonts/Inter-Bold.woff2"]
-        }
-      ]
-    },
-    {
-      provider: "local",
-      name: "InterLocalDisplay",
-      cssVariable: "--font-inter-display",
-      variants: [
-        {
-          weight: 400,
-          style: "normal",
-          src: ["./src/assets/fonts/InterDisplay-Regular.woff2"]
-        },
-        {
-          weight: 500,
-          style: "normal",
-          src: ["./src/assets/fonts/InterDisplay-Medium.woff2"]
-        },
-        {
-          weight: 600,
-          style: "normal",
-          src: ["./src/assets/fonts/InterDisplay-SemiBold.woff2"]
-        }
-      ]
-    }]
-  }
-})
+  vite: {
+    plugins: [tailwindcss()],
+    build: {
+      assetsInlineLimit: 10240,
+    }
+  },
+
+  integrations: [react()]
+});
