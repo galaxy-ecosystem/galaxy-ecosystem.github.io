@@ -6,6 +6,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://galaxy-ecosystem.github.io',
+  base: '/',
   compressHTML: true,
   build: {
     inlineStylesheets: 'always',
