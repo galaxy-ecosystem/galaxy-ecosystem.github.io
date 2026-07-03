@@ -15,7 +15,7 @@ const allMembers = await getCollection('team');
 const member = allMembers.find(m => m.id.replace(/\.[^/.]+$/, "") === slug);
 if (!member) throw new Error(`Team member not found: ${slug}`);
 const { Content } = await render(member);
-const { name, role, title, avatar, email, website, linkedin, github, twitter, googleScholar } = member.data;
+const { name, role, title, avatar, email, website, linkedin, github, orcid, twitter, googleScholar } = member.data;
 
 const roleToKey = {
   'Principal Investigator': 'team.pi',
@@ -70,6 +70,12 @@ const roleToKey = {
               <a href={github} target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors text-sm">
                 <Github className="w-4 h-4" />
                 <span>GitHub</span>
+              </a>
+            )}
+            {orcid && (
+              <a href={orcid} target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors text-sm">
+                <img src="/assets/orcid.svg" alt="" aria-hidden="true" class="w-4 h-4" />
+                <span>ORCID</span>
               </a>
             )}
             {twitter && (

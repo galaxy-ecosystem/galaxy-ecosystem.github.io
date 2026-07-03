@@ -51,6 +51,7 @@ const team = defineCollection({
     website: z.string().optional(),
     linkedin: z.string().optional(),
     github: z.string().optional(),
+    orcid: z.string().optional(),
     twitter: z.string().optional(),
     googleScholar: z.string().optional(),
     weight: z.number().default(100),
