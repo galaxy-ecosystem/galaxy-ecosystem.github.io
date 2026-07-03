@@ -1,12 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2b6cb0;stop-opacity:1" />
-    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="40%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e3a5f" stop-opacity="0.1"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
   </defs>
-  <path fill="url(#grad1)" d="M256 32L32 144l224 112 224-112-224-112zm0 288l-160-80v128c0 53 71.6 96 160 96s160-43 160-96V240l-160 80z" />
-  <path fill="#f6ad55" d="M450 160v160h-40V180l40-20z" />
-  <circle cx="256" cy="144" r="30" fill="#fff" opacity="0.9" />
-  <path fill="none" stroke="#fff" stroke-width="6" d="M256 114v60M226 144h60" opacity="0.8" />
+
+  <!-- Background circle -->
+  <rect width="512" height="512" rx="100" fill="#0f172a"/>
+
+  <!-- Nebula glow -->
+  <ellipse cx="256" cy="256" rx="200" ry="200" fill="url(#glow)"/>
+
+  <!-- Spiral arm 1 -->
+  <path d="M256 256 Q300 180 380 160 Q430 150 440 200 Q445 240 400 260 Q340 280 280 300 Q220 330 180 380 Q150 420 170 460 Q190 490 240 480 Q290 470 320 420 Q350 370 380 310 Q410 250 440 230"
+    fill="none" stroke="#3b82f6" stroke-width="20" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Spiral arm 2 -->
+  <path d="M256 256 Q210 330 130 350 Q80 360 70 310 Q65 270 110 250 Q170 230 230 210 Q290 180 330 130 Q360 90 340 50 Q320 20 270 30 Q220 40 190 90 Q160 140 130 200 Q100 260 70 280"
+    fill="none" stroke="#6366f1" stroke-width="18" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Spiral arm 3 (outer) -->
+  <path d="M256 256 Q320 200 400 210 Q450 220 460 280 Q460 340 400 360 Q320 380 260 340 Q200 300 160 240 Q130 180 160 130 Q200 80 300 90"
+    fill="none" stroke="#a78bfa" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Central core -->
+  <ellipse cx="256" cy="256" rx="55" ry="55" fill="url(#core)" opacity="0.9"/>
+
+  <!-- Bright center -->
+  <ellipse cx="256" cy="256" rx="18" ry="18" fill="#bfdbfe"/>
+
+  <!-- Stars -->
+  <circle cx="180" cy="100" r="3" fill="#fff" opacity="0.9"/>
+  <circle cx="380" cy="110" r="2.5" fill="#fff" opacity="0.7"/>
+  <circle cx="420" cy="180" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="450" cy="300" r="3.5" fill="#fff" opacity="0.8"/>
+  <circle cx="410" cy="380" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="350" cy="440" r="2.5" fill="#fff" opacity="0.7"/>
+  <circle cx="260" cy="460" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="160" cy="440" r="3" fill="#fff" opacity="0.8"/>
+  <circle cx="100" cy="380" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="70" cy="300" r="2.5" fill="#fff" opacity="0.7"/>
+  <circle cx="80" cy="200" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="110" cy="130" r="3" fill="#fff" opacity="0.9"/>
+  <circle cx="300" cy="130" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="340" cy="200" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="200" cy="380" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="140" cy="300" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="230" cy="100" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="430" cy="250" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="310" cy="440" r="1" fill="#fff" opacity="0.4"/>
 </svg>

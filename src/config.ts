@@ -1,26 +1,26 @@
 import heroImage from './assets/hero-real.jpg';
 
 export const SITE = {
-  website: 'https://scholar-lite-demo.netlify.app/', // Replace with your actual deployed URL
-  author: 'Scholar-Lite Team',
-  description: 'A lightweight, modern static website template for academic labs and scholars.',
-  title: 'Scholar-Lite',
+  website: 'https://galaxy-ecosystem.github.io', // Replace with your actual deployed URL
+  author: 'The collaborators',
+  description: 'The mainpage of the research group',
+  title: 'galaxy-ecosystem',
   ogImage: 'astropaper-og.jpg',
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   
   // Lab Info
-  labName: 'Scholar-Lite Lab',
-  university: 'University Name',
+  labName: 'Galaxy Ecosystem Research Group',
+  university: 'USTC',
   logo: '/assets/logo-real.svg', // Logo path
   avatar: '/assets/logo-real.svg', // Avatar for SEO/Schema
-  email: 'contact@lab.edu', // Contact email for Join Us page
+  email: 'ecwang16@ustc.edu.cn', // Contact email for Join Us page
 
   // Hero Section (Home Page) - Main content does not need to be translated for 8 languages by default
   hero: {
-    title: 'Advancing Computer Vision & Deep Learning Research.',
-    subtitle: 'We are the Scholar-Lite Lab.',
+    title: 'Researching Galaxy Evolution In The Universe',
+    subtitle: 'galaxies and beyond',
     action: 'View Publications', // Optional call to action text
     image: heroImage, // Hero image path
   },

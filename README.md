@@ -1,173 +1,65 @@
-# 🎓 Scholar-Lite
+## 🛠️ 快速开始
 
-<div align="center">
+### 环境要求
+*   Node.js v22.12.0 或更高版本
 
-![Astro](https://img.shields.io/badge/Astro_v6-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Pagefind](https://img.shields.io/badge/Pagefind-Search-FF0000?style=for-the-badge&logo=algolia&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
-
-**[English](./README.md) | [简体中文](./README.zh-CN.md)**
-
-> ## **⚡ Create your site in 30 seconds**
-> ```bash
-> npm create astro@latest -- --template fjd2004711/scholar-lite
-> ```
-
-<p align="center">
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/fjd2004711/scholar-lite" target="_blank">
-    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
-  </a>
-  <a href="https://vercel.com/new/clone?repository-url=https://github.com/fjd2004711/scholar-lite" target="_blank">
-    <img src="https://vercel.com/button" alt="Deploy with Vercel">
-  </a>
-</p>
-
-**The Next-Generation Static Website Template for Academic Labs & Scholars.**
-*Blazing fast, zero-config BibTeX import, and multilingual search engine built-in.*
-
----
-
-## 🚀 Quick Start (No Coding Required)
-
-1.  **Click** the `Deploy to Netlify` or `Deploy with Vercel` button above.
-2.  **Wait** for the deployment to finish.
-3.  **Go to** your new GitHub repository and find `citations.bib`.
-4.  **Upload** your own BibTeX file to replace it.
-5.  **Done!** Your website updates automatically in 1 minute.
-
----
-
-<div align="center" style="margin-top: 20px;">
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://scholar-lite-demo.netlify.app/" target="_blank">
-          <img src="https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" />
-        </a>
-        <br />
-        <strong>Live Preview</strong>
-      </td>
-      <td align="center">
-        <a href="https://github.com/fjd2004711/scholar-lite" target="_blank">
-          <img src="https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source Code" />
-        </a>
-        <br />
-        <strong>Repository</strong>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="center">
-  <img src="public/assets/screenshots/home-desktop-mockup.png" width="70%" alt="Desktop View" />
-  <img src="public/assets/screenshots/mobile-view-mockup.png" width="25%" alt="Mobile View" />
-</div>
-
-</div>
-
----
-
-## 🚀 Why Scholar-Lite?
-
-### ⚡ Unmatched Performance
-*   **Zero JS by Default**: Built on **Astro v6**, sending **0kb** of JavaScript to the client for content pages.
-*   **100/100 Lighthouse**: Optimized out-of-the-box for Performance, Accessibility, Best Practices, and SEO.
-*   **Tailwind CSS v4**: The latest utility-first CSS framework for rapid, modern styling.
-
-<p align="center">
-  <img src="public/assets/screenshots/lighthouse-score.png" width="80%" alt="Lighthouse Score">
-</p>
-
-### 🤖 Smart Automation
-*   **One-Click BibTeX Import**: Stop manually copying papers. Drop your `citations.bib` and run one command.
-*   **Intelligent Parsing**: Automatically extracts **PDF links**, **Code repositories**, **Project Websites**, **Videos**, and **Cover images**.
-*   **Asset Management**: Smart fallback system for missing publication covers.
-*   **Auto-Badging**: Automatically highlights "Best Paper", "Oral", or "Spotlight" awards based on BibTeX notes.
-
-### 🌍 Global Reach
-*   **Multilingual Search**: Built-in **Pagefind** search engine supporting **8 languages** (English, Chinese, Japanese, Korean, French, German, Spanish, Russian).
-*   **i18n Ready**: Native support for internationalization with type-safe translations.
-
----
-
-## 🆚 Comparison: Scholar-Lite vs. Hugo Academic
-
-| Feature | 🎓 Scholar-Lite | 🐢 Hugo Academic (Wowchemy) |
-| :--- | :--- | :--- |
-| **Tech Stack** | **Astro v6 + React + Tailwind v4** (Modern & Mainstream) | Hugo + Go Templates (Steep learning curve) |
-| **Performance** | **100/100 Lighthouse** (Zero JS by default) | Good, but often bloated with heavy JS |
-| **BibTeX Import** | **Zero-Config** (Drag & drop `citations.bib`) | Complex Python scripts / Manual entry |
-| **Customization** | **Component-based** (Edit `.astro` / `.tsx` files directly) | Rigid Theme (Overriding internal templates is hard) |
-| **Multilingual** | **Native i18n + Pagefind** (Search in 8 languages) | Partial support, search often breaks |
-| **Dev Experience** | **Hot Reload (HMR)** in milliseconds | Slower rebuilds on large sites |
-| **Ecosystem** | **NPM / Node.js** (Access to millions of packages) | Go Modules (Limited web-focused packages) |
-
----
-
-## 🛠️ Quick Start
-
-### Prerequisites
-*   Node.js v22.12.0 or higher
-
-### 1. Installation
+### 1. 安装
 ```bash
 git clone https://github.com/your-repo/scholar-lite.git
 cd scholar-lite
 npm install
 ```
 
-### 2. Development
-Start the local server with hot module replacement:
+### 2. 开发模式
+启动带有热更新的本地服务器：
 ```bash
 npm run dev
 ```
-Visit `http://localhost:4321`.
+访问 `http://localhost:4321`。
 
-### 3. Production Build
-Generate the static site and search index:
+### 3. 生产构建
+生成静态网站文件及搜索索引：
 ```bash
 npm run build
 ```
-*Note: The search index is generated at build time. Search functionality requires the build step.*
+*注意：搜索索引仅在构建时生成，因此搜索功能需要运行 build 后才能完整体验。*
 
 ---
 
-## 📚 Smart Publication & Book Management
+## 📚 智能论文与著作管理
 
-Scholar-Lite features a powerful **BibTeX Import Engine** located in `scripts/import-bibtex.js`, supporting both **Papers** and **Books**.
+Scholar-Lite 在 `scripts/import-bibtex.js` 中内置了强大的 **BibTeX 导入引擎**，支持**论文**与**书籍**的一键导入。
 
-### How to Import
-1.  **Export BibTeX**: Export your bibliography as `citations.bib` from Zotero, Mendeley, or Google Scholar.
-2.  **Place File**: Save `citations.bib` in the project root.
-3.  **Run Import**:
+### 如何导入
+1.  **导出 BibTeX**：从 Zotero、Mendeley 或 Google Scholar 导出您的文献为 `citations.bib`。
+2.  **放置文件**：将 `citations.bib` 文件保存到项目根目录。
+3.  **运行导入**：
     ```bash
     npm run import-bibtex
     ```
-4.  **Auto-Classification**: The system automatically classifies entries based on BibTeX type:
-    *   `@article`, `@inproceedings`, etc. -> Imported to **Publications** (`src/content/publications`)
-    *   `@book` -> Imported to **Books** (`src/content/books`)
+4.  **自动分类**：系统会自动识别 BibTeX 中的类型：
+    *   `@article`, `@inproceedings` 等 -> 导入到 **论文列表** (`src/content/publications`)
+    *   `@book` -> 导入到 **著作列表** (`src/content/books`)
 
-### Advanced BibTeX Features
+### 高级 BibTeX 特性
 
-The importer maps BibTeX fields to website elements intelligently:
+导入器会自动将 BibTeX 字段映射到网站布局，支持以下智能行为：
 
-| BibTeX Field | Website Element | Smart Behavior |
-|--------------|-----------------|----------------|
-| `cover`/`image` | Cover Image | Auto-detects local images in `src/assets/`. **Highly recommended for books**. |
-| `publisher` | Publisher | For books, `publisher` is automatically displayed as the venue. |
-| `pdf`/`url`/`file` | PDF Button | Cleans Zotero path formats (e.g., `files/mypaper.pdf`). |
-| `code`/`github` | Code Button | Generates a GitHub/Code link button. |
-| `website`/`project` | **Project Page** | Generates a Globe icon link to the project homepage. |
-| `demo` | **Live Demo** | Generates a "Demo" button (Web App / HuggingFace / Video). |
-| `video`/`recording` | **Video** | Generates a Video link button. |
-| `slides`/`ppt` | **Slides** | Generates a Slides download button. |
-| `award`/`note` | **Badges** | Auto-generates Gold/Blue/Red badges for "Best Paper", "Oral", etc. |
+| BibTeX 字段 | 网站元素 | 智能行为 |
+|-------------|----------|----------|
+| `cover`/`image` | 封面图片 | 自动检测 `src/assets/` 下的文件。**书籍强烈建议设置此字段**。 |
+| `publisher` | 出版社 | 书籍的 `publisher` 字段会自动显示在 venue 位置。 |
+| `pdf`/`url`/`file` | PDF 按钮 | 自动清洗 Zotero 文件路径格式（如 `files/mypaper.pdf`）。 |
+| `code`/`github` | 代码按钮 | 识别代码仓库链接，生成 GitHub/Code 按钮。 |
+| `website`/`project` | **项目主页** | 识别项目主页链接，生成地球仪图标按钮。 |
+| `demo` | **在线演示** | 生成 Demo 按钮（支持 Web App / HuggingFace / 视频链接）。 |
+| `video`/`recording` | **视频** | 生成视频播放链接按钮。 |
+| `slides`/`ppt` | **幻灯片** | 生成 PPT 下载按钮。 |
+| `award`/`note` | **荣誉徽章** | 自动生成“最佳论文”（金色）、“口头报告”（蓝色）等高亮标签。 |
 
-### BibTeX Entry Examples
+### BibTeX 条目示例
 
-#### 1. Paper
+#### 1. 论文 (Paper)
 ```bibtex
 @article{gpt4,
   title={GPT-4 Technical Report},
@@ -181,8 +73,8 @@ The importer maps BibTeX fields to website elements intelligently:
 }
 ```
 
-#### 2. Book
-Simply set the entry type to `@book`, and the system will automatically place it in the "Books" section.
+#### 2. 书籍 (Book)
+只需要将类型设置为 `@book`，系统会自动将其放入“著作”板块。
 ```bibtex
 @book{deeplearning,
   title={Deep Learning},
@@ -196,90 +88,90 @@ Simply set the entry type to `@book`, and the system will automatically place it
 
 ---
 
-## 🌟 Best Practices
+## 🌟 最佳实践
 
-### 📁 Directory Structure
-*   **Images**: Store website assets in `src/assets/images/`. Use `.webp` or optimized `.jpg` for better performance.
-*   **Team Photos**: Place headshots in `src/assets/team/`. Square aspect ratio (1:1) is recommended.
-*   **Content**: All editable content (News, Team, Research info) lives in `src/content/`.
+### 📁 目录结构建议
+*   **图片资源**: 建议存放于 `src/assets/images/`。使用 `.webp` 或压缩后的 `.jpg` 格式以获得最佳性能。
+*   **团队照片**: 成员头像建议存放于 `src/assets/team/`，推荐使用 1:1 方形裁剪。
+*   **内容文件**: 所有可编辑内容（新闻、团队、研究方向）均位于 `src/content/` 目录下。
 
-### 📝 Content Management
-*   **News**: Add new Markdown files in `src/content/news/`. The filename doesn't matter, but sorting is based on the `date` field.
-*   **Team**: Add members in `src/content/team/`. Use `weight` to control display order (lower numbers appear first).
-*   **Research Fields**: Add Markdown files in `src/content/research/`. Use `order` field to control display order.
-*   **Translations**: Edit `src/i18n/ui.ts` to modify UI text (e.g., navigation menu, buttons) for all supported languages.
+### 📝 内容管理技巧
+*   **新闻动态**: 在 `src/content/news/` 添加新的 Markdown 文件。文件名不影响排序，系统会自动根据 frontmatter 中的 `date` 字段排序。
+*   **团队成员**: 在 `src/content/team/` 添加成员。使用 `weight` 字段控制显示顺序（数字越小越靠前）。
+*   **研究方向**: 在 `src/content/research/` 添加 Markdown 文件。使用 `order` 字段控制显示顺序。
+*   **多语言文案**: 修改 `src/i18n/ui.ts` 可自定义导航栏、按钮等界面元素的翻译。
 
-### 🎓 More Academic Achievements
-Beyond papers and books, the system supports managing other academic achievements. Simply create Markdown files in the corresponding folders.
+### 🎓 更多学术成果管理
+除了论文和书籍，系统还支持以下学术成果的管理。直接在对应文件夹中创建 Markdown 文件即可。
 
-#### 1. Software Copyrights
-*   **Location**: `src/content/softwares/`
-*   **Example**:
+#### 1. 软件著作权 (Software Copyrights)
+*   **位置**: `src/content/softwares/`
+*   **示例**:
     ```markdown
     ---
-    title: "Intelligent Image Processing System V1.0"
-    developers: ["John Doe", "Jane Smith"]
+    title: "智能图像处理系统 V1.0"
+    developers: ["张三", "李四"]
     number: "2023SR123456"
     date: 2023-06-15
-    description: "An automated image processing platform based on deep learning."
+    description: "基于深度学习的自动化图像处理平台。"
     ---
     ```
 
-#### 2. Invention Patents
-*   **Location**: `src/content/patents/`
-*   **Example**:
+#### 2. 发明专利 (Invention Patents)
+*   **位置**: `src/content/patents/`
+*   **示例**:
     ```markdown
     ---
-    title: "A Method for Image Recognition Based on Attention Mechanism"
-    inventors: ["John Doe", "Bob Johnson"]
+    title: "一种基于注意力机制的图像识别方法"
+    inventors: ["张三", "王五"]
     number: "CN102345678B"
     date: 2024-01-20
-    status: "Granted" # Options: Granted, Pending, Filed
+    status: "Granted" # 可选: Granted(已授权), Pending(实审中), Filed(已受理)
     ---
     ```
 
-#### 3. Group Honors
-*   **Location**: `src/content/honors/`
-*   **Example**:
+#### 3. 集体荣誉 (Group Honors)
+*   **位置**: `src/content/honors/`
+*   **示例**:
     ```markdown
     ---
-    title: "18th Challenge Cup National College Student Extracurricular Academic Science and Technology Works Competition"
-    award: "Grand Prize"
+    title: "第十八届挑战杯全国大学生课外学术科技作品竞赛"
+    award: "特等奖"
     date: 2023-10-30
     year: "2023"
-    type: "Challenge Cup"  # Options: Challenge Cup, Internet+, Other
-    level: "Special"       # Options: Special, First, Second, Third
+    type: "Challenge Cup"  # 可选: Challenge Cup, Internet+, Other
+    level: "Special"       # 可选: Special(特等), First(一等), Second(二等), Third(三等)
     ---
     ```
 
-### 🖼️ Image Optimization
-Scholar-Lite automatically optimizes images imported from `src/assets/`.
-*   **Avoid**: Putting large images in `public/`.
-*   **Prefer**: Importing images in Markdown or Astro components to leverage automatic compression and lazy loading.
+### 🖼️ 图片优化
+Scholar-Lite 会自动优化从 `src/assets/` 导入的图片。
+*   **避免**: 将大图直接放在 `public/` 目录下（这会绕过构建优化）。
+*   **推荐**: 在 Markdown 或 Astro 组件中引用图片，享受自动压缩、格式转换和懒加载特性。
 
 ---
 
-## 🚢 Deployment
+## 🚢 部署指南
 
-Scholar-Lite is a static site that can be deployed anywhere.
+Scholar-Lite 是纯静态网站，可以部署在任何静态托管服务上。
 
-### Recommended Platforms
+### 推荐平台
 
-| Platform | Global Speed | Ease of Use | Cost |
-|----------|--------------|-------------|------|
-| **Cloudflare Pages** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Free |
-| **Vercel** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Free |
-| **Netlify** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Free |
-| **GitHub Pages** | ⭐⭐⭐ | ⭐⭐⭐⭐ | Free |
+| 平台 | 全球访问速度 | 易用性 | 成本 |
+|----------|----------------|---------------|------|
+| **Cloudflare Pages** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 免费 |
+| **Vercel** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 免费 |
+| **Netlify** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 免费 |
+| **GitHub Pages** | ⭐⭐⭐ | ⭐⭐⭐⭐ | 免费 |
 
 ### Cloudflare Pages / Vercel / Netlify
-1.  Connect your GitHub/GitLab repository.
-2.  **Build Command**: `npm run build`
-3.  **Output Directory**: `dist`
-4.  Deploy!
+1.  在平台控制台连接您的 GitHub/GitLab 代码仓库。
+2.  **构建命令 (Build Command)**: `npm run build`
+3.  **输出目录 (Output Directory)**: `dist`
+4.  点击部署即可。
 
 ### GitHub Pages / GitLab Pages
-This template includes CI/CD configurations (`.github/workflows` and `.gitlab-ci.yml`) to automatically build and deploy to GitHub/GitLab Pages on push.
+本项目已包含 CI/CD 配置文件（`.github/workflows` 和 `.gitlab-ci.yml`），推送到代码仓库后会自动触发构建并发布到 GitHub/GitLab Pages。
 
 ---
 
@@ -287,6 +179,6 @@ This template includes CI/CD configurations (`.github/workflows` and `.gitlab-ci
 
 **[Scholar-Lite Team](https://github.com/fjd2004711)**
 <br>
-*Empowering academic research with modern web technology.*
+*用现代 Web 技术赋能学术研究。*
 
 </div>

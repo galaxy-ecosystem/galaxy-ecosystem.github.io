@@ -20,10 +20,52 @@ if (!fs.existsSync(BOOKS_DIR)) {
   fs.mkdirSync(BOOKS_DIR, { recursive: true });
 }
 
-// Helper to clean BibTeX strings (remove braces)
+// ADS/AASTeX journal macro → proper abbreviation
+const JOURNAL_MACROS = {
+  '\\apj': 'ApJ',
+  '\\apjl': 'ApJL',
+  '\\apjs': 'ApJS',
+  '\\aap': 'A&A',
+  '\\aapr': 'A&AR',
+  '\\aj': 'AJ',
+  '\\mnras': 'MNRAS',
+  '\\mnrasl': 'MNRASL',
+  '\\pasp': 'PASP',
+  '\\araa': 'ARA&A',
+  '\\nat': 'Nature',
+  '\\science': 'Science',
+  '\\apss': 'Ap&SS',
+  '\\pnas': 'PNAS',
+  '\\prd': 'PRD',
+  '\\prl': 'PRL',
+  '\\physrep': 'Phys. Rep.',
+  '\\actaa': 'Acta Astron.',
+  '\\baas': 'BAAS',
+  '\\aaps': 'A&AS',
+  '\\newa': 'New Astron.',
+  '\\newar': 'New Astron. Rev.',
+  '\\astroptcs': 'Astropart. Phys.',
+  '\\jcap': 'JCAP',
+  '\\cqg': 'Class. Quantum Grav.',
+  '\\nar': 'New Astron. Rev.',
+  '\\solphys': 'Sol. Phys.',
+  '\\icarus': 'Icarus',
+  '\\spie': 'Proc. SPIE',
+};
+
+// Helper to clean BibTeX strings (remove braces, expand macros)
 function cleanString(str) {
   if (!str) return '';
   return str.replace(/[{}]/g, '').trim();
+}
+
+function expandJournalMacro(journal) {
+  if (!journal) return '';
+  let cleaned = cleanString(journal);
+  for (const [macro, expanded] of Object.entries(JOURNAL_MACROS)) {
+    if (cleaned === macro) return expanded;
+  }
+  return cleaned;
 }
 
 // Helper to parse authors
@@ -84,7 +126,7 @@ function importBibtex() {
     const year = parseInt(tags.year, 10);
     const authors = parseAuthors(tags.author);
     // For books, publisher is often the venue equivalent
-    const venue = cleanString(tags.booktitle || tags.journal || tags.school || tags.publisher || tags.howpublished || tags.organization || tags.institution || 'Unknown Venue');
+    const venue = expandJournalMacro(tags.booktitle || tags.journal || tags.school || tags.publisher || tags.howpublished || tags.organization || tags.institution || 'Unknown Venue');
     const description = cleanString(tags.abstract || `Published in ${venue}.`);
     
     // Extract additional fields
@@ -107,8 +149,8 @@ function importBibtex() {
       cover = DEFAULT_COVER;
     }
     
-    // PDF link
-    let pdf = cleanString(tags.pdf || tags.file || tags.url || '');
+    // PDF link (fallback: pdf → file → url → adsurl)
+    let pdf = cleanString(tags.pdf || tags.file || tags.url || tags.adsurl || '');
     if (pdf.startsWith(':')) {
       const parts = pdf.split(':');
       if (parts.length >= 2 && parts[1].trim() !== '') {
