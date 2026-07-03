@@ -7,11 +7,13 @@ export async function getStaticPaths() {
   const activities = await getCollection('activities');
   return activities.map(activity => ({
     params: { slug: activity.id.replace(/\.[^/.]+$/, "") },
-    props: { activity },
   }));
 }
 
-const { activity } = Astro.props;
+const { slug } = Astro.params;
+const allActivities = await getCollection('activities');
+const activity = allActivities.find(a => a.id.replace(/\.[^/.]+$/, "") === slug);
+if (!activity) throw new Error(`Activity not found: ${slug}`);
 const { Content } = await render(activity);
 ---
 

@@ -6,11 +6,13 @@ export async function getStaticPaths() {
   const researchAreas = await getCollection('research');
   return researchAreas.map(area => ({
     params: { slug: area.id.replace(/\.[^/.]+$/, "") },
-    props: { area },
   }));
 }
 
-const { area } = Astro.props;
+const { slug } = Astro.params;
+const allAreas = await getCollection('research');
+const area = allAreas.find(a => a.id.replace(/\.[^/.]+$/, "") === slug);
+if (!area) throw new Error(`Research area not found: ${slug}`);
 const { Content } = await render(area);
 ---
 

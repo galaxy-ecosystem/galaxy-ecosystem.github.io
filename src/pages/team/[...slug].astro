@@ -7,11 +7,13 @@ export async function getStaticPaths() {
   const teamMembers = await getCollection('team');
   return teamMembers.map(member => ({
     params: { slug: member.id.replace(/\.[^/.]+$/, "") },
-    props: { member },
   }));
 }
 
-const { member } = Astro.props;
+const { slug } = Astro.params;
+const allMembers = await getCollection('team');
+const member = allMembers.find(m => m.id.replace(/\.[^/.]+$/, "") === slug);
+if (!member) throw new Error(`Team member not found: ${slug}`);
 const { Content } = await render(member);
 const { name, role, title, avatar, email, website, linkedin, github, twitter, googleScholar } = member.data;
 
