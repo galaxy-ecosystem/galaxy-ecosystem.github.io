@@ -8,7 +8,7 @@ const publications = defineCollection({
     authors: z.array(z.string()),
     year: z.number(),
     venue: z.string(),
-    type: z.enum(['paper', 'book', 'patent', 'software']).default('paper'),
+    type: z.enum(['paper']).default('paper'),
     cover: image().optional(),
     doi: z.string().optional(),
     award: z.string().optional(),
@@ -21,32 +21,6 @@ const publications = defineCollection({
       video: z.string().optional(),
     }).optional(),
     featured: z.boolean().default(false),
-    badges: z.array(z.object({
-      text: z.string(),
-      type: z.enum(['gold', 'blue', 'red', 'green', 'default']).default('default')
-    })).optional(),
-  }),
-});
-
-const books = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/books" }),
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    authors: z.array(z.string()),
-    year: z.number(),
-    venue: z.string(),
-    cover: image().optional(),
-    doi: z.string().optional(),
-    award: z.string().optional(),
-    links: z.object({
-      pdf: z.string().optional(),
-      code: z.string().optional(),
-      website: z.string().optional(),
-      demo: z.string().optional(),
-      slides: z.string().optional(),
-      video: z.string().optional(),
-    }).optional(),
-    // Removed featured as per user request
     badges: z.array(z.object({
       text: z.string(),
       type: z.enum(['gold', 'blue', 'red', 'green', 'default']).default('default')
@@ -102,41 +76,6 @@ const research = defineCollection({
   }),
 });
 
-const patents = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/patents" }),
-  schema: z.object({
-    title: z.string(),
-    inventors: z.array(z.string()),
-    number: z.string(), // Patent Number
-    date: z.date(),
-    status: z.enum(['Granted', 'Pending', 'Filed']),
-    link: z.string().optional(),
-  }),
-});
-
-const softwares = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/softwares" }),
-  schema: z.object({
-    title: z.string(),
-    developers: z.array(z.string()),
-    number: z.string(), // Registration Number
-    date: z.date(),
-    description: z.string().optional(),
-  }),
-});
-
-const honors = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/honors" }),
-  schema: z.object({
-    title: z.string(),
-    award: z.string(), // e.g., "Gold Medal", "First Prize"
-    date: z.date(),
-    year: z.string(), // Display year on badge
-    type: z.enum(['Challenge Cup', 'Internet+', 'Other']).default('Other'),
-    level: z.enum(['Special', 'First', 'Second', 'Third']).default('Third'),
-  }),
-});
-
 const activities = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/activities" }),
   schema: ({ image }) => z.object({
@@ -149,12 +88,8 @@ const activities = defineCollection({
 
 export const collections = {
   publications,
-  books,
   team,
   news,
   research,
-  patents,
-  softwares,
-  honors,
   activities,
 };

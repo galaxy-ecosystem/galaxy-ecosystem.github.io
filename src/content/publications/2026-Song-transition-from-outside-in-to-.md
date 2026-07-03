@@ -1,5 +1,5 @@
 ---
-title: "Transition from outside-in to inside-out at z \ensuremath\sim 2: Evidence from radial profiles of the specific star formation rate based on JWST/HST"
+title: "Transition from outside-in to inside-out at z \\ensuremath\\sim 2: Evidence from radial profiles of the specific star formation rate based on JWST/HST"
 authors: ["Jie Song", "Enci Wang", "Cheng Jia", "Cheqiu Lyu", "Yangyao Chen", "Jinyang Wang", "Fujia Li", "Weiyu Ding", "Guanwen Fang", "Xu Kong"]
 year: 2026
 venue: "A&A"
