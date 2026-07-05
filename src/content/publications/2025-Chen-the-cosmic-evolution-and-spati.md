@@ -4,7 +4,7 @@ authors: ["Zeyu Chen", "Enci Wang", "Hu Zou", "Haoran Yu", "Zhicheng He", "Huiyu
 year: 2025
 venue: "ApJL"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2025-chen-qso-multiphase-gas-impact.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2025ApJ...988L..39C"
   code: ""

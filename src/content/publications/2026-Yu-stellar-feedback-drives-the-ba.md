@@ -4,7 +4,7 @@ authors: ["Haoran Yu", "Enci Wang", "Zeyu Chen", "Céline Péroux", "Hu Zou", "Z
 year: 2026
 venue: "Science Advances"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2026-yu-stellar-feedback-outflow-map.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2025arXiv251205584Y"
   code: ""

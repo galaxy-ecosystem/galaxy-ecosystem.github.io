@@ -4,7 +4,7 @@ authors: ["Cheqiu Lyu", "Enci Wang", "Junxian Wang", "Cheng Jia", "Jie Song", "Y
 year: 2025
 venue: "ApJL"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2025-lyu-ionizing-photons-ewuv.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2025ApJ...988L..72L"
   code: ""
