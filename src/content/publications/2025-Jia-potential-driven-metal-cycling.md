@@ -4,7 +4,7 @@ authors: ["Cheng Jia", "Enci Wang", "Cheqiu Lyu", "Chengyu Ma", "Jie Song", "Yan
 year: 2025
 venue: "ApJL"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2025-jia-metal-cycling-dzdr.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2025ApJ...986L..24J"
   code: ""
