@@ -4,7 +4,7 @@ authors: ["Chengyu Ma", "Kai Wang", "Enci Wang", "Yingjie Peng", "Haochen Jiang"
 year: 2024
 venue: "ApJL"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2024-ma-fundamental-metallicity-relation.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2024ApJ...971L..14M"
   code: ""

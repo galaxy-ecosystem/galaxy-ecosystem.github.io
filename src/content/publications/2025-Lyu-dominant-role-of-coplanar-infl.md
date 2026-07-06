@@ -4,7 +4,7 @@ authors: ["Cheqiu Lyu", "Enci Wang", "Hongxin Zhang", "Yingjie Peng", "Xin Wang"
 year: 2025
 venue: "ApJL"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2025-lyu-coplanar-inflows-disk-evolution.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2025ApJ...981L...6L"
   code: ""

@@ -4,7 +4,7 @@ authors: ["Haixin Li", "Enci Wang", "Cheqiu Lyu", "Yangyao Chen", "Huiyuan Wang"
 year: 2025
 venue: "ApJ"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2025-li-velocity-dispersion-abundances.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2025ApJ...984...73L"
   code: ""

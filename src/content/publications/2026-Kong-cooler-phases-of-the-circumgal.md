@@ -4,7 +4,7 @@ authors: ["Weiwen Kong", "Zeyu Chen", "Enci Wang", "Haoran Yu", "Kai Wang", "Don
 year: 2026
 venue: "arXiv e-prints"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2026-kong-cgm-cooler-phases.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2026arXiv260604793K"
   code: ""

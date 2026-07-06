@@ -4,7 +4,7 @@ authors: ["Zeyu Chen", "Enci Wang", "Hu Zou", "Siwei Zou", "Yang Gao", "Huiyuan 
 year: 2025
 venue: "ApJ"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2025-chen-desi-mgii-cgm.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2025ApJ...981...81C"
   code: ""

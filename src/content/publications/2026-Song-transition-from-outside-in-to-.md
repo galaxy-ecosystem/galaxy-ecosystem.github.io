@@ -4,7 +4,7 @@ authors: ["Jie Song", "Enci Wang", "Cheng Jia", "Cheqiu Lyu", "Yangyao Chen", "J
 year: 2026
 venue: "A&A"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2026-song-inside-out-growth.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.205S"
   code: ""

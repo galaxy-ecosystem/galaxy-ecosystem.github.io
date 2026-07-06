@@ -4,7 +4,7 @@ authors: ["Cheqiu Lyu", "Yingjie Peng", "Yipeng Jing", "Xiaohu Yang", "Luis C. H
 year: 2024
 venue: "ApJ"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2024-lyu-halo-assembly-history.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2024ApJ...972..108L"
   code: ""

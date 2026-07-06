@@ -4,7 +4,7 @@ authors: ["Cheqiu Lyu", "Haoran Yu", "Enci Wang", "Junxian Wang", "Cheng Jia", "
 year: 2026
 venue: "ApJL"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2026-lyu-mgii-cool-gas-outflows.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2026ApJ..1000L...3L"
   code: ""

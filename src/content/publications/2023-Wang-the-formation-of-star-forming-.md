@@ -4,7 +4,7 @@ authors: ["Enci Wang", "Simon J. Lilly"]
 year: 2023
 venue: "ApJ"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2023-wang-tng50-disk-formation.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2023ApJ...955...55W"
   code: ""

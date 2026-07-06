@@ -4,7 +4,7 @@ authors: ["Cheng Jia", "Enci Wang", "Huiyuan Wang", "Hui Li", "Yao Yao", "Jie So
 year: 2024
 venue: "ApJ"
 type: "paper"
-cover: "../../assets/paper-vision.jpg"
+cover: "../../assets/paper-2024-jia-jades-size-growth.png"
 links:
   pdf: "https://ui.adsabs.harvard.edu/abs/2024ApJ...977..165J"
   code: ""
