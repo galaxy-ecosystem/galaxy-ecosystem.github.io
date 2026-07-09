@@ -2,7 +2,7 @@
 name: "Yifan Wang"
 role: "Master Student"
 title: ["Master Student"]
-avatar: "../../assets/avatar-yifan-wang.png"
+avatar: "../../assets/avatar-yifan-wang.jpg"
 bio: "Master's student in astrophysics studying the distribution of metals across different scales."
 email: "yfwangastro@mail.ustc.edu.cn"
 orcid: "https://orcid.org/0009-0005-0337-8054"
