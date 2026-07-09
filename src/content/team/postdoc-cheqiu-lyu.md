@@ -2,7 +2,7 @@
 name: "Dr. Cheqiu Lyu"
 role: "Postdoc"
 title: ["Postdoc"]
-avatar: "../../assets/avatar-cheqiu-lyu.png"
+avatar: "../../assets/avatar-cheqiu-lyu.jpg"
 bio: "Postdoctoral researcher studying galaxy assembly, chemical evolution, and the galaxy-halo connection."
 email: "lyucq@ustc.edu.cn"
 website: "https://cqlyu.github.io/"
