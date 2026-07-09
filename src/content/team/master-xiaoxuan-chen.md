@@ -3,7 +3,7 @@ name: "Xiaoxuan Chen"
 role: "Master Student"
 title: ["Master Student"]
 avatar: "../../assets/avatar-xiaoxuan-chen.jpg"
-bio: "Master's student studying galaxy formation and evolution with IllustrisTNG galaxy dynamics analyses."
+bio: "Galaxy formation and evolution through IllustrisTNG galaxy dynamics analyses."
 email: "nic@ustc.edu.cn"
 weight: 31
 ---

@@ -3,7 +3,7 @@ name: "Haoran Yu"
 role: "PhD Student"
 title: ["PhD Student"]
 avatar: "../../assets/avatar-haoran-yu.jpg"
-bio: "PhD student in astrophysics studying baryon distribution in the CGM/IGM, the cosmic web, and baryon cycling traced by metal absorption lines."
+bio: "Baryon distribution in the CGM/IGM, the cosmic web, and baryon cycling traced by metal absorption lines."
 email: "ryanr@mail.ustc.edu.cn"
 github: "https://github.com/ryanr549"
 orcid: "https://orcid.org/0009-0008-1319-498X"

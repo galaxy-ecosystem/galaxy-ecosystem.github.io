@@ -3,7 +3,7 @@ name: "Prof. Enci Wang"
 role: "Principal Investigator"
 title: ["Principal Investigator", "Specially Appointed Professor"]
 avatar: "../../assets/avatar-enci-wang.jpg"
-bio: "Principal Investigator studying galaxy formation and evolution, with a focus on star formation, chemical enrichment, and gas disk evolution."
+bio: "Galaxy formation and evolution, with a focus on star formation, chemical enrichment, and gas disk evolution."
 email: "ecwang16@ustc.edu.cn"
 weight: 0
 ---

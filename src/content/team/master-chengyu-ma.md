@@ -3,7 +3,7 @@ name: "Chengyu Ma"
 role: "Master Student"
 title: ["Master Student"]
 avatar: "../../assets/avatar-chengyu-ma.jpg"
-bio: "Master's student studying star formation and stellar feedback in the multiphase interstellar medium."
+bio: "Star formation and stellar feedback in the multiphase interstellar medium."
 email: "astromacy@mail.ustc.edu.cn"
 orcid: "https://orcid.org/0009-0006-7343-8013"
 weight: 32

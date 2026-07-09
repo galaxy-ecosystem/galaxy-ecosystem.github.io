@@ -3,7 +3,7 @@ name: "Zeyu Chen"
 role: "PhD Student"
 title: ["PhD Student"]
 avatar: "../../assets/avatar-zeyu-chen.jpg"
-bio: "PhD student in astrophysics studying the circumgalactic medium, quasar absorption lines, and galaxy evolution."
+bio: "The circumgalactic medium, quasar absorption lines, and galaxy evolution."
 email: "czy664@mail.ustc.edu.cn"
 orcid: "https://orcid.org/0009-0004-5989-6005"
 weight: 21

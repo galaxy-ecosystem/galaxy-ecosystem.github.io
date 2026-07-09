@@ -3,7 +3,7 @@ name: "Jinyang Wang"
 role: "Master Student"
 title: ["Master Student"]
 avatar: "../../assets/avatar-jinyang-wang.jpg"
-bio: "Master's student in astrophysics studying high-redshift galaxy formation and assembly with JWST and HST data."
+bio: "High-redshift galaxy formation and assembly with JWST and HST data."
 email: "jinyangwang2024@mail.ustc.edu.cn"
 orcid: "https://orcid.org/0009-0008-0247-8944"
 weight: 33
