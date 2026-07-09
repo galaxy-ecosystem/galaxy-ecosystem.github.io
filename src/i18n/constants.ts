@@ -8,5 +8,4 @@ export const LANGUAGES = {
   fr: 'Français',
   de: 'Deutsch',
   es: 'Español',
-  ru: 'Русский',
 };

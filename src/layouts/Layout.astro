@@ -36,6 +36,8 @@ const ogImage = new URL(`/og/${finalOgSlug}.png`, Astro.url);
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/DMSerifDisplay-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/DMSerifText-Regular.ttf" as="font" type="font/ttf" crossorigin />
     <meta name="generator" content={Astro.generator} />
     
     <title>{pageTitle}</title>
@@ -96,32 +98,34 @@ const ogImage = new URL(`/og/${finalOgSlug}.png`, Astro.url);
 
       function getStoredLang() {
         if (typeof localStorage !== 'undefined') {
-          return localStorage.getItem('preferred-lang') || fallbackLang;
+          const storedLang = localStorage.getItem('preferred-lang');
+          return storedLang && translations[storedLang] ? storedLang : fallbackLang;
         }
         return fallbackLang;
       }
 
       // Expose global setLanguage function
       window.setLanguage = (lang) => {
-        localStorage.setItem('preferred-lang', lang);
-        document.documentElement.lang = lang;
+        const selectedLang = translations[lang] ? lang : fallbackLang;
+        localStorage.setItem('preferred-lang', selectedLang);
+        document.documentElement.lang = selectedLang;
         
         // Update all elements with data-i18n-key
         const elements = document.querySelectorAll('[data-i18n-key]');
         elements.forEach(el => {
           const key = el.getAttribute('data-i18n-key');
-          if (key && translations[lang] && translations[lang][key]) {
+          if (key && translations[selectedLang] && translations[selectedLang][key]) {
             // Check if it's an input/textarea with placeholder
             if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-              el.placeholder = translations[lang][key];
+              el.placeholder = translations[selectedLang][key];
             } else {
-              el.textContent = translations[lang][key];
+              el.textContent = translations[selectedLang][key];
             }
           }
         });
 
         // Dispatch event for other components (like Header)
-        window.dispatchEvent(new CustomEvent('language-change', { detail: { lang } }));
+        window.dispatchEvent(new CustomEvent('language-change', { detail: { lang: selectedLang } }));
       };
 
       // Initialize
